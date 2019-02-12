@@ -1,0 +1,18 @@
+server:
+  port: 8081
+spring:
+    datasource:
+        url: jdbc:mysql://192.168.20.17:3306/bdgascloud?useUnicode=true&characterEncoding=utf8
+        driverClassName: com.mysql.jdbc.Driver
+        username: bdgascloud
+        password: bdgascloud
+    redis:
+        hostName: 192.168.20.6
+        port: 6379
+        database: 5
+        password: 123456
+        pool:
+          testOnBorrow: true
+          maxTotal: 600
+          maxIdle: 300
+          maxWaitMillis: 10000
